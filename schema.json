@@ -1,0 +1,148 @@
+{
+  "type": "component",
+  "metadata": {},
+  "schema": {
+    "name": "bb-buttonplus",
+    "friendlyName": "Button+",
+    "description": "A Extended version of a button",
+    "icon": "Button",
+    "hasChildren": true,
+    "settings": [
+      {
+        "type": "boolean",
+        "key": "customContents",
+        "label": "Custom Contents",
+        "defaultValue": false
+      },
+      {
+        "type": "text",
+        "key": "text",
+        "label": "Text",
+        "defaultValue": "This is a button",
+        "dependsOn": {
+          "setting": "customContents",
+          "value": false
+        }
+      },
+      {
+        "type": "select",
+        "key": "variant",
+        "label": "Variant",
+        "defaultValue": "primary",
+        "options": [
+          {
+          "label": "Primary",
+          "value": "primary"
+          },
+          {
+            "label": "Secondary",
+            "value": "secondary"
+          },
+          {
+            "label": "Action",
+            "value": "cta"
+          },
+          {
+            "label": "Warning",
+            "value": "warning"
+          },
+          {
+            "label": "Over Background",
+            "value": "overBackground"
+          },
+          {
+            "label": "Custom",
+            "value": "custom"
+          }
+        ]
+      },
+      {
+        "type": "select",
+        "key": "size",
+        "label": "Size",
+        "defaultValue": "M",
+        "options": [
+          {
+            "label": "Small",
+            "value": "S"
+          },
+          {
+            "label": "Medium",
+            "value": "M"
+          },
+          {
+            "label": "Large",
+            "value": "L"
+          },
+          {
+            "label": "Extra Large",
+            "value": "XL"
+          }
+        ]
+      },
+      {
+        "type": "boolean",
+        "key": "quiet",
+        "label": "Quiet",
+        "defaultValue": false
+      },
+      {
+        "type": "boolean",
+        "key": "disabled",
+        "label": "Disabled",
+        "defaultValue": false
+      },
+      {
+        "type": "event",
+        "key": "btnClicked",
+        "label": "On Click"
+      },
+      {
+        "type": "section",
+        "section": true,
+        "dependsOn": {
+          "setting": "variant",
+          "value": "custom"
+        },
+        "settings": [
+          {
+            "type": "color",
+            "key": "bgColour",
+            "label": "Background",
+            "defaultValue": "#000000"
+          },
+          {
+            "type": "color",
+            "key": "bgHover",
+            "label": "Background (Hover)",
+            "defaultValue": "#000000"
+          },
+          {
+            "type": "color",
+            "key": "txtColour",
+            "label": "Text Colour",
+            "defaultValue": "#000000"
+          },
+          {
+            "type": "color",
+            "key": "txtHover",
+            "label": "Text Colour (Hover)",
+            "defaultValue": "#000000"
+          },
+          {
+            "type": "color",
+            "key": "brdColour",
+            "label": "Border Colour",
+            "defaultValue": "#000000"
+          },
+          {
+            "type": "color",
+            "key": "brdHover",
+            "label": "Border Colour (Hover)",
+            "defaultValue": "#000000"
+          }
+        ]
+      }
+    ]
+  }
+}
