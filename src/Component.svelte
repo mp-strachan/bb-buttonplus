@@ -25,7 +25,7 @@
 
 </script>
 
-<div use:styleable={$component.styles}>
+<div use:styleable={$component.styles} class="buttonplus">
   <button on:click={btnClicked} class="
             spectrum-Button spectrum-Button--size{size}
             spectrum-Button--{variant}
@@ -45,6 +45,10 @@
 </div>
 
 <style>
+  .buttonplus {
+    padding: var(--spacing-xs) !important;
+  }
+
   .spectrum-Button--custom {
     background-color: var(--bgColour, black);
     color: var(--txtColour, white);
