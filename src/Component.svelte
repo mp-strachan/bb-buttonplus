@@ -45,10 +45,6 @@
 </div>
 
 <style>
-  .buttonplus {
-    padding: var(--spacing-xs) !important;
-  }
-
   .spectrum-Button--custom {
     background-color: var(--bgColour, black);
     color: var(--txtColour, white);
