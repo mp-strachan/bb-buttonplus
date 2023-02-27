@@ -7,6 +7,7 @@
     "description": "A Extended version of a button",
     "icon": "Button",
     "hasChildren": true,
+    "showEmptyState": false,
     "settings": [
       {
         "type": "boolean",
